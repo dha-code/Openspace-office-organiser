@@ -1,0 +1,13 @@
+{
+  file: ./data/bouman_8.xlsx,
+  number_of_tables: 8,
+  capacity: 4,
+  latecomers: ./data/latecomers.xlsx,
+  wishlist: ./data/wishlist.xlsx
+}
+
+# wishlist.xlsx
+# Excel file with the following format - Desired group per row 
+# An	Fatemeh		
+# Therese	Dhanya	Kevin P	Stef
+# Jean	Yassine		
