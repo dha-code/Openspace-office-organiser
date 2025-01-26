@@ -1,40 +1,56 @@
-<h1>Openspace classifier - Challenge - AI Bootcamp </h1>
 
-<h2>What is the challenge?</h2>
+# Openspace office organiser 
 
-<p>A program that randomly assigns people to a spot in the openspace.</p>
-The Openspace office has 6 tables with 4 seats each.
-Given a file with names of people to be seated, the program will randomly assign people to tables
-and also let you know if you still have some seats left.
+## Table of Contents  
+- [Description](#description)  
+- [Installation](#installation)  
+- [Usage](#usage)    
+- [Contributors](#contributors)  
+- [Files](#files)  
 
-<h2>Installation</h2>
+## Description
+
+This repository contains the code to organize people in an open office space with customizable tables.
+
+Details provided by the user:<br/>
+<li>Number of tables<br/>
+<li>Seats per table<br/>
+<li>Employees present for the day<br/>
+<li>Wishlist : a list with people needing to sit together (optional)<br/>
+<li>Latecomers : needing to be seated at the last minute (optional)<br/>
+
+The program automatically adds tables to the workspace if everyone hasn't been seated with the given number of tables.<br/>
+The organisation of the office tables is displayed and also saved in [table_layout.xlsx](./Openspace-office-organiser/data/table_layout.xlsx)
+
+## Installation
 The packages required to run the program are saved in requirements.txt<br/>
-To install them all please run<br/>
-pip install -r requirements.txt<br/>
-
-<h2>Usage</h2>
-Add all names to an Excel file and enter the name of the excel file in the config file<br/>
-Run main.py to see the Openspace come alive with names!<br/>
+To install them all run<br/>
+```bash
+pip install -r requirements.txt
+```
+## Usage
+Add all names to an Excel file and enter the name of the Excel file in the config file<br/>
+```bash
+python .\main.py
+```
 Example output:<br/><br/>
-<img src="https://github.com/user-attachments/assets/33c6c95e-04b0-475d-a3cd-1014bb7aa9ea"/>
+![image](https://github.com/user-attachments/assets/e01bce9b-ef3d-4531-9c1d-66ac2511e2d7)
 
-<h2>Contributors</h2>
-<p>Thérèse De Backer and Dhanya Sunil</p>
+## Contributors
+[Dhanya Sunil](https://github.com/dha-code/)<br/>
+[Therese Debacker](https://github.com/therese-debacker)
 
- md
+## Files
 
-## Evaluation criteria
-
-| Criteria       | Indicator                                                                              | Yes/No |
-| -------------- | -------------------------------------------------------------------------------------- | ------ |
-| 1. Is complete | The student has realized all must-have features.                                       | 0      |
-|                | There is a published GitHub repo available.                                            | 1      |
-|                | The program runs until the end without any error.                                      | 1      |
-|                | The program starts by running `python main.py` in the terminal.                      | 1      |
-| 2. Is correct  | The code is well typed.                                                                | 1      |
-|                | There is a docstring for every function/method/class.                                  | 0      |
-|                | All the constraints are respected.                                                     | 1      |
-| 3. Is great    | There is an interaction with the user.                                                 | 0      |
-|                | The algorithm doesn't create table with alone people.                                  | 1      |
-|                | The result is nicely displayed and can be saved in a file.                             | 1      |
-|                | The program has been developped has a team using proper git flow and management system | 1      |
+* [data/](./Openspace-office-organiser/data)
+  * [bouman_8.xlsx](./Openspace-office-organiser/data/bouman_8.xlsx)
+  * [config.yml](./Openspace-office-organiser/data/config.yml)
+  * [latecomers.xlsx](./Openspace-office-organiser/data/latecomers.xlsx)
+  * [table_layout.xlsx](./Openspace-office-organiser/data/table_layout.xlsx)
+  * [wishlist.xlsx](./Openspace-office-organiser/data/wishlist.xlsx)
+* [utils/](./Openspace-office-organiser/utils)
+  * [file_utils.py](./Openspace-office-organiser/utils/file_utils.py)
+  * [openspace.py](./Openspace-office-organiser/utils/openspace.py)
+  * [table.py](./Openspace-office-organiser/utils/table.py)
+* [main.py](./Openspace-office-organiser/main.py)
+* [requirements.txt](./Openspace-office-organiser/requirements.txt)
