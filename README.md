@@ -19,8 +19,7 @@ Details provided by the user:<br/>
 <li>Wishlist : a list with people needing to sit together (optional)<br/>
 <li>Latecomers : needing to be seated at the last minute (optional)<br/>
 
-The program automatically adds tables to the workspace if everyone hasn't been seated with the given number of tables.<br/>
-The organisation of the office tables is displayed and also saved in [table_layout.xlsx](./Openspace-office-organiser/data/table_layout.xlsx)
+The program automatically adds tables to the workspace if everyone hasn't been seated with the given number of tables. The organisation of the office tables is displayed and also saved in [table_layout.xlsx](./Openspace-office-organiser/data/table_layout.xlsx)
 
 ## Installation
 The packages required to run the program are saved in requirements.txt<br/>
